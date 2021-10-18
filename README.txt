@@ -1,1 +1,1 @@
-Link to the presentation: https://docs.google.com/presentation/d/1GTITsLxBl4wlGBnL5qbVEyTtOw0LWMq3DpDwtkhjBqM/edit#slide=id.gf921ab7161_0_180
+## This is an RCOS workshop on the creation and decoding of QR and Barcodes. Check out the presentation slides [HERE](https://docs.google.com/presentation/d/1GTITsLxBl4wlGBnL5qbVEyTtOw0LWMq3DpDwtkhjBqM/edit#slide=id.gf921ab7161_0_180)
