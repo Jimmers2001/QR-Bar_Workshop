@@ -7,7 +7,8 @@ def barcode_create(file_name, digits):
         EAN13(digits, writer=ImageWriter()).write(f) 
 
 if __name__ == "__main__":
-    file_name = "barcode.png"
-    digits = "11111111111111"
+    #Command to run: python3 barcode_creation.py
+    file_name = "workshop_barcode.png"
+    digits = "346297563925697"
     
     barcode_create(file_name, digits)

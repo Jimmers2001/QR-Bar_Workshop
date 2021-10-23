@@ -21,8 +21,9 @@ def QR_create(text, file_name, qr_version=1, qr_color="black"):
     return img
 
 if __name__ == "__main__":
+    #command to run: python QR_creation.py
     #First QR Code being tested
-    qr1_text = "Tiny baby QR Code :)"
+    qr1_text = "Boring, regular, generic, ordinary, typical old Code :)"
     qr1_file = "qr1.png"
 
     #Second QR Code being tested
@@ -30,6 +31,5 @@ if __name__ == "__main__":
     qr2_file = "qr2.png"
 
     #Creation of both QR codes
-    qr1 = QR_create(qr1_text, qr1_file, 1, "black")
-    qr2 = QR_create(qr2_text, qr2_file, 40, "red") #unreadable at 20 or more 
-    
+    qr1 = QR_create(qr1_text, qr1_file, 1)
+    qr2 = QR_create(qr2_text, qr2_file, 40, "red") #unreadable at 20 or more using this decoder
