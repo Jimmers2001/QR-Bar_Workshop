@@ -1,7 +1,7 @@
 from barcode import EAN13 # a type of format
 from barcode.writer import ImageWriter #to save the barcode as a png file
 
-def create_barcode(file_name, digits):
+def barcode_create(file_name, digits):
     with open(file_name, 'wb') as f: #write in binary mode
         #numbers written in barcode where the last one is automatically generated
         EAN13(digits, writer=ImageWriter()).write(f) 
@@ -9,4 +9,5 @@ def create_barcode(file_name, digits):
 if __name__ == "__main__":
     file_name = "barcode.png"
     digits = "11111111111111"
-    create_barcode(file_name, digits)
+    
+    barcode_create(file_name, digits)

@@ -1,12 +1,13 @@
+from QR_decoding import QR_decode
 import qrcode
 
 #function takes in text to encode and file_name to save the encoding to
 #it uses inputted version defaulting to 1 and inputted fill color defaulting to black
-def create_QR(text, file_name, qr_version=1, qr_color="black"):
+def QR_create(text, file_name, qr_version=1, qr_color="black"):
     #Create the QR Code object
     qr = qrcode.QRCode(
         version = qr_version,
-        error_correction = qrcode.constants.ERROR_CORRECT_L, #Levels: L, M, Q, H
+        error_correction = qrcode.constants.ERROR_CORRECT_H, #Levels: L, M, Q, H
         box_size = 10,
         border=5
     )
@@ -29,6 +30,6 @@ if __name__ == "__main__":
     qr2_file = "qr2.png"
 
     #Creation of both QR codes
-    qr1 = create_QR(qr1_text, qr1_file, 1, "black")
-    qr2 = create_QR(qr2_text, qr2_file, 40, "red")
+    qr1 = QR_create(qr1_text, qr1_file, 1, "black")
+    qr2 = QR_create(qr2_text, qr2_file, 40, "red") #unreadable at 20 or more 
     
