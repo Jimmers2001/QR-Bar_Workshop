@@ -1,4 +1,4 @@
-from QR_decoding import QR_decode
+from QR_decoder import QR_decode
 import qrcode
 
 #function takes in text to encode and file_name to save the encoding to
